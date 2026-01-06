@@ -1,0 +1,275 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+h1 {
+  color: #2c3e50;
+  font-size: 28px;
+}
+h2 {
+  color: #2980b9;
+  margin-top: 40px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+.metric-card {
+  background: white;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  font-size: 16px;
+  line-height: 1.5;
+}
+.metric-card strong {
+  color: #2c3e50;
+}
+.plot-container {
+  background: white;
+  padding: 15px;
+  margin: 25px 0;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+.plot-container iframe {
+  width: 100%;
+  border: none;
+  min-height: 520px;
+  display: block;
+}
+.highlight {
+  background-color: #f1f8ff;
+  padding: 20px;
+  border-left: 4px solid #3498db;
+  margin: 20px 0;
+}
+@media (max-width: 768px) {
+  .plot-container iframe {
+    min-height: 400px;
+  }
+}
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 150px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.logo {
+  height: 100px;
+  max-width: 300px;
+  object-fit: contain;
+}
+
+.header-text {
+  text-align: center;
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #2c3e50;
+}
+
+.header-text p {
+  margin: 5px 0 0;
+  font-size: 16px;
+  color: #7f8c8d;
+}
+
+/* Estilo para comparação lado a lado: Geral vs COMEX */
+.age-comparison {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.age-card {
+  flex: 1;
+  min-width: 300px;
+}
+
+.age-card h4 {
+  margin-top: 0;
+  color: #2c3e50;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .age-comparison {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.growth-comparison {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.growth-card {
+  flex: 1;
+  min-width: 280px;
+}
+
+.growth-card h4 {
+  margin-top: 0;
+  color: #2c3e50;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .growth-comparison {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+/* Estilo para seção de Metodologia */
+.methodology-section {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  margin: 30px 0;
+  line-height: 1.6;
+}
+
+.methodology-section h3 {
+  color: #2c3e50;
+  margin-top: 25px;
+}
+
+.methodology-section ul, .methodology-section ol {
+  padding-left: 20px;
+}
+
+.methodology-section li {
+  margin-bottom: 8px;
+}
+
+.criteria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.criterion {
+  padding: 15px;
+  border-radius: 6px;
+  border-left: 4px solid #ccc;
+}
+
+.criterion.accept {
+  background-color: #f8fdfa;
+  border-left-color: #27ae60;
+}
+
+.criterion.reject {
+  background-color: #fdf8f8;
+  border-left-color: #e74c3c;
+}
+
+.criterion.neutral {
+  background-color: #fafafa;
+  border-left-color: #95a5a6;
+}
+
+.criterion h4 {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.note {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 6px;
+  margin-top: 20px;
+  font-style: italic;
+  border-left: 3px solid #3498db;
+}
+
+.methodology-section a {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+.methodology-section a:hover {
+  color: #1a5276;
+}
+
+/* Estilo para tags de metodologia */
+.tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.85em;
+  font-weight: bold;
+  color: white;
+}
+
+.tag.accept {
+  background-color: #27ae60; /* verde */
+}
+
+.tag.reject {
+  background-color: #e74c3c; /* vermelho */
+}
+
+/* Lista de critérios */
+.criteria-list {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 6px;
+  margin: 15px 0;
+  /*max-height: 400px;*/
+  overflow-y: visible;
+  border: 1px solid #eee;
+}
+
+.criteria-list em {
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+.linha {
+    border: none;
+    border-top: 2px solid #DCDCDC;
+    margin-top: 5px; 
+    margin-bottom: 20px; 
+}
